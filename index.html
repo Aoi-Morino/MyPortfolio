@@ -38,7 +38,7 @@
     <li>2023年4月　公大高専に入学</li>
     <li>2023年5月　C++、並びにArduinoを学び始める (2024年11月現在挫折中)</li>
 
-    <li>2024年4月　GppgleColabサービスを利用し、Pythonを学び始める</li>
+    <li>2024年4月　GoogleColabサービスを利用し、Pythonを学び始める</li>
     <li>
       2024年5月　ColabTurtleで
       <a href="https://colab.research.google.com/drive/1RjmG_wl8ETNjcKdyKQir0XFsY6eia-GW?usp=sharing">毎分更新のデジタル時計</a>
@@ -51,12 +51,17 @@
     </li>
     <li>
       2024年10月～　Unity、C#を学び始め、高専祭に向け
-      <a herf="https://aoi-morino.github.io/HitAndBroForPaperCup/">Hit&Bro風ゲーム</a>
+      <a href="https://aoi-morino.github.io/HitAndBroForPaperCup/">Hit&Bro風ゲーム</a>
       を制作
     </li>
     <li>
       2024年12月～　Pygameについて学び、
-      <a herf="https://github.com/Aoi-Morino/Shooting360">シューティングゲーム</a>
+      <a href="https://github.com/Aoi-Morino/Shooting360">シューティングゲーム</a>
+      を制作
+    </li>
+    <li>
+      2025年2月～　PySideについて学び、
+      <a href="https://github.com/Aoi-Morino/diceBattle_Qt">COC（クトゥルフ神話TRPG）風ダイスバトルゲーム</a>
       を制作
     </li>
   </ul>
@@ -113,6 +118,42 @@
     <img src="シューティングゲーム3.png" alt="Shooting360 Img3" width="45%" />
     <img src="シューティングゲーム4.png" alt="Shooting360 Img4" width="45%" /><br>
     <a href="https://github.com/Aoi-Morino/Shooting360">リポジトリはこちらから</a>
+  </p>
+
+  <h3>COC（クトゥルフ神話TRPG）風ダイスバトルゲーム</h3>
+  <p>制作時間：約43時間</p>
+  <p>
+    COC（クトゥルフ神話TRPG）のシステム・戦闘技能・能力値決定システムを流用し、そこに心理戦や
+    それに伴うバランス調整というオリジナル要素を詰め込んだPvEの心理戦ゲームである。<br>
+    まずそれぞれの能力値がランダムに決定され、そこから自分と相手の素早さ（ゲーム内ではDEXと表示）
+    を比較して先攻後攻が決められる（同一の素早さの場合は、1D100、つまり100の面があるサイコロを1回振り、
+    出目が小さいほうが先行）。<br><br>
+    自分のターンでは左側に表示される戦闘技能を選択するラジオボタンから使用する戦闘技能を選択し、
+    準備完了のボタンを押すと結果が表示される。このとき、1D100が振られ、その数字が選択した戦闘技能の
+    成功率と同じ数字かそれよりも低かった場合は攻撃成功となり、数字が戦闘技能の成功率より高かった場合は
+    攻撃失敗となる。すべての技能は基本何度でも使用できるが、「拳銃」技能だけは弾薬が3発しかないことに
+    留意しなければならない。<br>
+    相手のターンでは相手が選択した戦闘技能の成功率が表示されるため、そこから相手の選択した戦闘技能
+    を仮定し、左側に表示される守備技能を選択するラジオボタンから適切な守備技能を選択する。この時、
+    攻撃技能と守備技能の特性を理解していることが重要である。<br><br>
+    「回避」技能は比較的成功しやすく、成功時に攻撃を受けなくなる。しかし、失敗時はすべての
+    ダメージを受けるほか、速度が高速の攻撃は回避することができない。<br>
+    「防御」技能は成功しにくく、また受けるダメージ量が高いほど成功率が低くなる。その代わりに、
+    回避と同様成功時に攻撃を受けなくなり、失敗時も数字が低くなるほどダメージを軽減する効果を持ち、
+    戦闘技能の特性に関係なく使用することができる。<br>
+    「反撃」技能は相手の攻撃を完全に受け、軽減・無効化をすることはできない代わりに相手に非常に
+    高い確率で追加のダメージを与える。ただし自分と相手が同時にHP0以下になった場合は戦闘技能での
+    死亡が優先される他、遠距離攻撃に反撃することはできない。<br><br>
+    また、本ゲームではCOCの特徴でもある「クリティカル」「ファンブル」のルールを採用している。
+    戦闘技能を振る際に5以下が出た場合はクリティカルとなり、ダイス数が二倍になる。95超過が出た場合は
+    ファンブルとなり、転んで1ダメージを受ける。<br>
+
+
+    <img src="coc風ダイスバトルゲーム1.png" alt="diceBattle Img1" width="45%" />
+    <img src="coc風ダイスバトルゲーム2.png" alt="diceBattle Img2" width="45%" />
+    <img src="coc風ダイスバトルゲーム3.png" alt="diceBattle Img3" width="45%" />
+    <img src="coc風ダイスバトルゲーム4.png" alt="diceBattle Img4" width="45%" /><br>
+    <a href="https://github.com/Aoi-Morino/diceBattle_Qt">リポジトリはこちらから</a>
   </p>
 
   <h2>My Coding Languages</h2>
